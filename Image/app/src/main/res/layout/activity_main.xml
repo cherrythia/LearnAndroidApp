@@ -32,6 +32,7 @@
             android:layout_height="match_parent"
             app:srcCompat="@drawable/homer"
             android:id="@+id/homer"
-            android:alpha="0" />
+            android:alpha=".2"
+            android:onClick="fade" />
     </RelativeLayout>
 </RelativeLayout>
