@@ -7,17 +7,19 @@
     tools:context="com.example.clpl2.connect3.MainActivity">
 
     <LinearLayout
+        android:id="@+id/playAgainLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:alpha="0"
+        android:alpha="1"
         android:background="@android:color/holo_orange_light"
         android:orientation="vertical"
         android:padding="30dp"
+        android:visibility="invisible"
         tools:layout_editor_absoluteX="99dp"
         tools:layout_editor_absoluteY="183dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/winnerMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Text"
