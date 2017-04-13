@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
                     LinearLayout layout = (LinearLayout) findViewById(R.id.playAgainLayout);
                     layout.setVisibility(View.VISIBLE);
+
+                    GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
+                    gridLayout.setVisibility(View.INVISIBLE);
                 }
             }
 
@@ -63,8 +66,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playAgain(View view) {
+
         LinearLayout layout = (LinearLayout) findViewById(R.id.playAgainLayout);
         layout.setVisibility(View.INVISIBLE);
+
+        GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
+        gridLayout.setVisibility(View.VISIBLE);
 
         activePlayer = 0;
 
